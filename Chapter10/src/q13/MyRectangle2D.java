@@ -26,18 +26,8 @@ public class MyRectangle2D {
         return x;
     }
 
-    public MyRectangle2D setX(double x) {
-        this.x = x;
-        return this;
-    }
-
     public double getY() {
         return y;
-    }
-
-    public MyRectangle2D setY(double y) {
-        this.y = y;
-        return this;
     }
 
     public double getHeight() {
