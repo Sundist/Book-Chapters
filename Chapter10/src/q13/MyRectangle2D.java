@@ -34,18 +34,8 @@ public class MyRectangle2D {
         return height;
     }
 
-    public MyRectangle2D setHeight(double height) {
-        this.height = height;
-        return this;
-    }
-
     public double getWidth() {
         return width;
-    }
-
-    public MyRectangle2D setWidth(double width) {
-        this.width = width;
-        return this;
     }
 
     public double getArea() {
