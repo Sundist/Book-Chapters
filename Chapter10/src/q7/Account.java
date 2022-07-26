@@ -9,10 +9,7 @@ public class Account {
     private Date dateCreated;
 
     Account() {
-        id = 0;
-        balance = 0;
-        annualInterestRate = 0;
-        dateCreated = new Date();
+        this(0, 0);
     }
 
     Account(int newId, double newBalance) {
