@@ -2,6 +2,7 @@ package q28;
 
 public class MyStringBuilder2 {
     private String s;
+     // TODO 27 gibi
 
     public MyStringBuilder2() {
         s = "";

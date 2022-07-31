@@ -1,6 +1,7 @@
 package q10;
 
 public class Queue {
+    // TODO eksik
     private int[] elements;
     private int size;
 
@@ -13,7 +14,8 @@ public class Queue {
 
     }
 
-    public void dequeue() {
+    public int dequeue() {
+
     }
 
     public boolean empty() {
@@ -23,11 +25,6 @@ public class Queue {
     }
 
     public int getSize() {
-        int numberOfElements = 0;
-        for (int i = 0; i < elements.length; i++) {
-            if (elements[i] != 0)
-                numberOfElements++;
-        }
-        return numberOfElements;
+        return size;
     }
 }

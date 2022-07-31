@@ -51,9 +51,8 @@ public class Course {
         numberOfStudents--;
     }
 
-    public void clear(String[] students) {
-        for (int i = 0; i < students.length; i++)
-            students[i] = null;
+    public void clear() {
+        students = new String[3];
     }
 
 

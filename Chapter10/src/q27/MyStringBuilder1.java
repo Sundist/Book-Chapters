@@ -3,6 +3,8 @@ package q27;
 public class MyStringBuilder1 {
     private String s;
 
+    // TODO karakter array i olacak ve genisleyecek
+
     public MyStringBuilder1(String s) {
         this.s = s;
     }
@@ -16,7 +18,7 @@ public class MyStringBuilder1 {
     public MyStringBuilder1 append(int i) {
         String newStr  = this.s;
         newStr += i + "";
-        return new MyStringBuilder1(newStr);
+        return this;
     }
 
     public int length() {
