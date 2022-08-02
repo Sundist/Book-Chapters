@@ -6,12 +6,14 @@ public class Triangle extends GeometricObject {
     private double side3;
 
     Triangle() {
+        super("red",true);
         side1 = 1;
         side2 = 1;
         side3 = 1;
     }
 
-    Triangle(double side1, double side2, double side3) {
+    Triangle(double side1, double side2, double side3, String color, boolean filled) {
+        super(color, filled);
         this.side1 = side1;
         this.side2 = side2;
         this.side3 = side3;
