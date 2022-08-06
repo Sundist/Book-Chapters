@@ -11,11 +11,11 @@ public class Queue {
     }
 
     public void enqueue(int v) {
-
+        return;
     }
 
     public int dequeue() {
-
+        return 1;
     }
 
     public boolean empty() {

@@ -6,7 +6,7 @@ public class Triangle extends GeometricObject {
     private double side3;
 
     Triangle() {
-        super("red",true);
+        super("red", true);
         side1 = 1;
         side2 = 1;
         side3 = 1;
@@ -58,6 +58,6 @@ public class Triangle extends GeometricObject {
                 "side1=" + side1 +
                 ", side2=" + side2 +
                 ", side3=" + side3 +
-                '}';
+                super.toString() + '}';
     }
 }
