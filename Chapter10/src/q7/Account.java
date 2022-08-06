@@ -8,11 +8,11 @@ public class Account {
     private double annualInterestRate = 0;
     private Date dateCreated;
 
-    Account() {
+    public Account() {
         this(0, 0);
     }
 
-    Account(int newId, double newBalance) {
+    public Account(int newId, double newBalance) {
         id = newId;
         balance = newBalance;
         dateCreated = new Date();
