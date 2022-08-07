@@ -11,7 +11,7 @@ public class Circle2D {
         radius = 1;
     }
 
-    Circle2D(double x, double y, double radius) {
+    public Circle2D(double x, double y, double radius) {
         this.x = x;
         this.y = y;
         this.radius = radius;
@@ -56,4 +56,12 @@ public class Circle2D {
         return false;
     }
 
+    @Override
+    public String toString() {
+        return "Circle2D{" +
+                "x=" + x +
+                ", y=" + y +
+                ", radius=" + radius +
+                '}';
+    }
 }
