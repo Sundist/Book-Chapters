@@ -23,12 +23,22 @@ public class Course {
         students.remove(student);
     }
 
-    public String[] getStudent() {
-        String[] s = new String[students.size()];
-        return students.toArray(s);
+    public void getStudent() {
+        for (String stu : students
+        ) {
+            System.out.println(stu);
+        }
     }
 
     public int getNumberOfStudents() {
         return students.size();
+    }
+
+    @Override
+    public String toString() {
+        return "Course{" +
+                "course='" + course + '\'' +
+                ", students=" + students +
+                '}';
     }
 }
