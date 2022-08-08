@@ -9,12 +9,14 @@ public class NewAccount {
     private double balance;
     private ArrayList<Transaction> transactions;
     private Date date;
+    private double interestRate;
 
     NewAccount(String name, int id, double balance) {
         this.name = name;
         this.id = id;
         this.balance = balance;
         date = new Date();
+        transactions = new ArrayList<>();
     }
 
     public String getName() {
@@ -53,6 +55,37 @@ public class NewAccount {
         this.date = date;
     }
 
+    public void setTransactions(ArrayList<Transaction> transactions) {
+        this.transactions = transactions;
+    }
+
+    public double getInterestRate() {
+        return interestRate;
+    }
+
+    public void setInterestRate(double interestRate) {
+        this.interestRate = interestRate;
+    }
+
+    public void withdraw(double amount) {
+        balance -= amount;
+        transactions.add(new Transaction('W', amount, balance, "Withdraw from account"));
+    }
+
+    public void deposit(double amount) {
+        balance += amount;
+        transactions.add(new Transaction('D', amount, balance, "Deposit to the account"));
+    }
+
+    public double getMonthlyInterestRate() {
+        return interestRate / 12;
+    }
+
+    public double getMonthlyInterest() {
+        return balance * (getMonthlyInterestRate() / 100);
+    }
+
+
     @Override
     public String toString() {
         return "NewAccount{" +
@@ -61,6 +94,7 @@ public class NewAccount {
                 ", balance=" + balance +
                 ", transactions=" + transactions +
                 ", date=" + date +
+                ", interestRate=" + interestRate +
                 '}';
     }
 }
