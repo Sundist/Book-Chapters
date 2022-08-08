@@ -19,4 +19,14 @@ public class Main {
         }
         System.out.println(arrays);
     }
+
+    public static int maxNumOfRow(ArrayList<Object> arr) {
+        //todo
+        return 1;
+    }
+
+    public static int maxNumOfCol(ArrayList<Object> arr) {
+        //TODO
+        return 1;
+    }
 }
