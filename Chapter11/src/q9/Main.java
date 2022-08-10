@@ -16,7 +16,7 @@ public class Main {
             for (int j = 0; j < n; j++)
                 array.add(random.nextInt(2));
             arrays.add(array);
-            array.stream().mapToInt(o -> o).max();
+            //array.stream().mapToInt(o -> o).max();
         }
         System.out.println(arrays);
 
