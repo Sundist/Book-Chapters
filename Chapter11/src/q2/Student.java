@@ -1,34 +1,19 @@
 package q2;
 
 public class Student extends Person {
-    private int status;
-    public final static int FRESHMAN = 1;
-    public final static int SOPHOMORE = 2;
-    public final static int JUNIOR = 3;
-    public final static int SENIOR = 4;
+    private StudentStatus status;
 
-    Student(String name, String address, String phoneNumber, String email, int status) {
+    Student(String name, String address, String phoneNumber, String email, StudentStatus status) {
         super(name, address, phoneNumber, email);
         this.status = status;
     }
 
-    public void setStatus(int status) {
+    public void setStatus(StudentStatus c) {
         this.status = status;
     }
 
     public String getStatus() {
-        switch (status) {
-            case 1:
-                return "freshman";
-            case 2:
-                return "sophomore";
-            case 3:
-                return "junior";
-            case 4:
-                return "senior";
-            default:
-                return "Unknown";
-        }
+        return status.getType();
     }
 
     public String toString() {
