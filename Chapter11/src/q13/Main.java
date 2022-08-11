@@ -15,7 +15,7 @@ public class Main {
 
     }
 
-    // 4, 5, 8, 1, 3, 4, 4, 5, 8, 9
+
     public static void removeDuplicate(ArrayList<Integer> list) {
         ArrayList<Integer> arr = new ArrayList<>();
         for (Integer element : list) {
