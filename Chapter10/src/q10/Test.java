@@ -5,6 +5,13 @@ public class Test {
         Queue queue = new Queue();
         System.out.println(queue.getSize());
         System.out.println(queue.empty());
+        queue.enqueue(6);
+        queue.enqueue(1);
+        queue.enqueue(4);
+        queue.enqueue(2);
+        System.out.println(queue.getSize());
+        System.out.println(queue.empty());
+        System.out.println(queue.toString());
 
     }
 }
