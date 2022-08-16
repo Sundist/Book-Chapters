@@ -1,30 +1,50 @@
 package q10;
 
+import java.util.Arrays;
+
 public class Queue {
-    // TODO eksik
     private int[] elements;
     private int size;
+    final static int DEFAULT_CAPACITY = 8;
 
     Queue() {
-        size = 8;
-        elements = new int[size];
+        size = 0;
+        elements = new int[DEFAULT_CAPACITY];
     }
 
     public void enqueue(int v) {
-        return;
+        if ((getSize() + 1) > elements.length)
+            elements = Arrays.copyOf(elements, DEFAULT_CAPACITY * 2);
+        elements[size] = v;
+        size++;
     }
 
     public int dequeue() {
-        return 1;
+        int res = -1;
+        if (getSize() > 0) {
+            res = elements[0];
+            for (int i = 0, j = 1; j < getSize(); i++, j++)
+                elements[i] = elements[j];
+            size--;
+        }
+        return res;
     }
 
     public boolean empty() {
-        if (elements[0] == 0)
+        if (getSize() == 0)
             return true;
         return false;
     }
 
     public int getSize() {
         return size;
+    }
+
+    @Override
+    public String toString() {
+        return "Queue{" +
+                "elements=" + Arrays.toString(elements) +
+                ", size=" + size +
+                '}';
     }
 }
