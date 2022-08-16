@@ -5,12 +5,10 @@ import java.util.Arrays;
 
 public class Test {
     public static void main(String[] args) {
-
         String s = "ab#12#453";
         String regex = "#";
         String s2 = "a?b?gf#e";
         String regex2 = "[?#]";
-
         System.out.println("split(\"ab#12#453\",\"#\"): " + Arrays.toString(split(s, regex)));
         System.out.println("split(\"a?b?gf#e\",\"[?#]\"): " + Arrays.toString(split(s2, regex2)));
     }
