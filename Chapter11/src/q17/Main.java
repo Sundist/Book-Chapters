@@ -21,9 +21,9 @@ public class Main {
             if (m % f == 0) {
                 smallFactors.add(f);
                 m /= f;
-                f = 1;
+            } else {
+                f++;
             }
-            f++;
         }
         return smallFactors;
     }

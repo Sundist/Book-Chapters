@@ -18,10 +18,10 @@ public class Test {
     public static Integer maxValue(ArrayList<Integer> list) {
         if (list.size() == 0 || list.isEmpty())
             return null;
-        Integer max = list.indexOf(0);
+        Integer max = list.get(0);
         for (int i = 0; i < list.size(); i++) {
-            if (list.indexOf(i) > max)
-                max = list.indexOf(i);
+            if (list.get(i) > max)
+                max = list.get(i);
         }
         return max;
     }

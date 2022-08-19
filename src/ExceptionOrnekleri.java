@@ -1,8 +1,13 @@
 import java.io.IOException;
+import java.util.ArrayList;
 
 public class ExceptionOrnekleri {
 
     public static void main(String[] args) {
+
+        ArrayList<Integer> a = null;
+        a.clone();
+
         System.out.println(1.0 / 0);
         try {
             foo();

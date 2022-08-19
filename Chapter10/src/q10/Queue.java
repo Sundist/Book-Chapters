@@ -13,7 +13,7 @@ public class Queue {
     }
 
     public void enqueue(int v) {
-        if ((getSize() + 1) > elements.length)
+        if (size > elements.length)
             elements = Arrays.copyOf(elements, DEFAULT_CAPACITY * 2);
         elements[size] = v;
         size++;
@@ -21,7 +21,7 @@ public class Queue {
 
     public int dequeue() {
         int res = -1;
-        if (getSize() > 0) {
+        if (size > 0) {
             res = elements[0];
             for (int i = 0, j = 1; j < getSize(); i++, j++)
                 elements[i] = elements[j];

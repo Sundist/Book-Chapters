@@ -8,7 +8,7 @@ public class Main {
         int number1 = (int) (Math.random() * 10);
         int number2 = (int) (Math.random() * 10);
         Scanner input = new Scanner(System.in);
-        ArrayList<Integer> answers = new ArrayList<Integer>();
+        ArrayList<Integer> answers = new ArrayList<>();
         System.out.print("What is " + number1 + " + " + number2 + "? ");
         int answer = input.nextInt();
 

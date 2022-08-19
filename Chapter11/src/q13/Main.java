@@ -1,7 +1,9 @@
 package q13;
 
 import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.Scanner;
+import java.util.Set;
 
 public class Main {
     public static void main(String[] args) {
@@ -18,9 +20,12 @@ public class Main {
 
     public static void removeDuplicate(ArrayList<Integer> list) {
         ArrayList<Integer> arr = new ArrayList<>();
+        Set<Integer> set = new HashSet<>();
         for (Integer element : list) {
-            if (!arr.contains(element))
+            if (!set.contains(element)) {
                 arr.add(element);
+                set.add(element);
+            }
         }
         System.out.println(arr);
     }

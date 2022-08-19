@@ -23,7 +23,7 @@ public class Course {
         students.remove(student);
     }
 
-    public void getStudent() {
+    public void printStudent() {
         for (String stu : students
         ) {
             System.out.println(stu);
