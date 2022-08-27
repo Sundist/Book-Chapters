@@ -5,7 +5,7 @@ public abstract class GeometricObject {
     protected String color = "White";
     protected boolean filled;
 
-    GeometricObject(){
+    GeometricObject() {
 
     }
 
