@@ -1,6 +1,6 @@
-package q05;
+package q11;
 
-public abstract class GeometricObject implements Comparable<GeometricObject> {
+public abstract class GeometricObject {
 
     private String color;
     private boolean filled;
@@ -31,22 +31,10 @@ public abstract class GeometricObject implements Comparable<GeometricObject> {
         this.filled = filled;
     }
 
-    public static GeometricObject max(GeometricObject o, GeometricObject g) {
-        if (o.compareTo(g) == 1)
-            return o;
-        return g;
-    }
-
-    @Override
-    public int compareTo(GeometricObject o) {
-        if (this.getArea() == o.getArea())
-            return 0;
-        else if (this.getArea() > o.getArea())
-            return 1;
-        return -1;
-    }
+    public abstract Object clone(Octagon o) throws CloneNotSupportedException;
 
     public abstract double getArea();
 
     public abstract double getPerimeter();
 }
+
