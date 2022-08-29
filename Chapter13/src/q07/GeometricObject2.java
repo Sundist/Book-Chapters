@@ -1,15 +1,15 @@
-package q01;
+package q07;
 
-public abstract class GeometricObject {
+public abstract class GeometricObject2 implements Colorable {
 
     protected String color = "White";
     protected boolean filled;
 
-    protected GeometricObject() {
+    protected GeometricObject2() {
 
     }
 
-    protected GeometricObject(String color, boolean filled) {
+    protected GeometricObject2(String color, boolean filled) {
         this.color = color;
         this.filled = filled;
     }
@@ -35,6 +35,8 @@ public abstract class GeometricObject {
         return "GeometricObject{" +
                 "color='" + color + '\'' +
                 ", filled=" + filled +
+                ", area= " + getArea() +
+                ", perimeter= " + getPerimeter() +
                 '}';
     }
 
@@ -42,4 +44,6 @@ public abstract class GeometricObject {
 
     public abstract double getPerimeter();
 
+    public abstract void howToColor();
 }
+
