@@ -1,7 +1,5 @@
 package q10;
 
-import q09.Circle;
-
 public class Test {
     public static void main(String[] args) {
         GeometricObject rect1 = new Rectangle(5, 4, "red", true);
