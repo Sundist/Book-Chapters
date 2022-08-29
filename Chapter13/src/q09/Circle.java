@@ -7,6 +7,7 @@ public class Circle extends GeometricObject implements Comparable<Circle> {
     Circle() {
     }
 
+
     Circle(double radius) {
         this.radius = radius;
     }
@@ -17,14 +18,6 @@ public class Circle extends GeometricObject implements Comparable<Circle> {
         setFilled(filled);
     }
 
-    @Override
-    public int compareTo(Circle o) {
-        if (this.radius > o.radius)
-            return 1;
-        else if (this.radius < o.radius)
-            return -1;
-        return 0;
-    }
 
     public boolean equals(Circle o) {
         return this.compareTo((Circle) o) == 0;
@@ -47,4 +40,12 @@ public class Circle extends GeometricObject implements Comparable<Circle> {
     public void setRadius(double radius) {
         this.radius = radius;
     }
+
+    @Override
+    public int compareTo(Circle o) {
+        if (this.radius > o.radius)
+            return 1;
+        return 0;
+    }
+
 }

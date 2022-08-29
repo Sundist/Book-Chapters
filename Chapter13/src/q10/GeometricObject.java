@@ -1,4 +1,4 @@
-package q09;
+package q10;
 
 public abstract class GeometricObject {
 
@@ -41,4 +41,8 @@ public abstract class GeometricObject {
     public abstract double getArea();
 
     public abstract double getPerimeter();
+
+    public abstract boolean equals(Rectangle o);
+
+
 }
