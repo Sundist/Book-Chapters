@@ -12,6 +12,8 @@ public class Test {
 
         System.out.println("Is the cloned stack a shallow copy of the starting stack?");
         System.out.println(cloned == start);
+
+        System.out.println("ANLAMADIĞIM BİR SIKINTI VAR!");
         System.out.println("\nCloned " + cloned.toString());
         System.out.println("\nOriginal " + start.toString());
     }

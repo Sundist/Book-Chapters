@@ -6,6 +6,7 @@ public class Test {
         System.out.println(octagon.toString());
 
         Octagon octagon2 = (Octagon) octagon.clone();
+        octagon2.setSide(9);
 
         int result = (octagon.compareTo(octagon2));
         if (result == 1)
