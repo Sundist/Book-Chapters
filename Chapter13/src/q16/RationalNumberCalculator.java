@@ -6,7 +6,7 @@ public class RationalNumberCalculator {
     public static void main(String[] args) {
         if (args.length != 3) {
             System.out.println(
-                    "Usage: java RNumCalculator \"operand1 operator operand2\" ");
+                    "Usage: java RationalNumberCalculator \"operand1 operator operand2\" ");
             System.exit(0);
         }
         if (args[0].contains("/") || args[2].contains("/")) {
