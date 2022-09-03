@@ -58,6 +58,14 @@ public class Rational extends Number implements Comparable<Number> {
         return r[1];
     }
 
+    public void setNumerator(long numerator) {
+        this.r[0] = numerator;
+    }
+
+    public void setDenominator(long denominator) {
+        this.r[1] = denominator;
+    }
+
     public Rational add(Rational a) {
         return new Rational(r[0] * a.getDenominator() + r[1] * a.getNumerator(),
                 (r[1] * a.getDenominator()));
@@ -87,8 +95,6 @@ public class Rational extends Number implements Comparable<Number> {
 
     @Override
     public String toString() {
-        return "Rational{" +
-                "r=" + Arrays.toString(r) +
-                '}';
+        return r[0] + "/" + r[1];
     }
 }
