@@ -1,6 +1,6 @@
 package q09;
 
-public class Circle extends GeometricObject implements Comparable<Circle> {
+public class Circle extends q07.GeometricObject2 implements Comparable<Circle> {
 
     private double radius;
 
@@ -31,6 +31,11 @@ public class Circle extends GeometricObject implements Comparable<Circle> {
     @Override
     public double getPerimeter() {
         return 2 * Math.PI * radius;
+    }
+
+    @Override
+    public void howToColor() {
+
     }
 
     public double getRadius() {
