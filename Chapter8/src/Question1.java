@@ -22,11 +22,9 @@ public class Question1 {
 
     private static double[][] createRandomArray() {
         Random random = new Random();
-        //System.out.print("Enter a 3-by-4 matrix row by row: ");
         double[][] matrix = new double[3][4];
         for (int i = 0; i < 3; i++) {
             for (int j = 0; j < 4; j++) {
-                //matrix[i][j] = scanner.nextDouble();
                 matrix[i][j] = random.nextDouble(100);
             }
         }
