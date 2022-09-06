@@ -2,7 +2,6 @@ import java.util.Random;
 
 public class Question4 {
     public static void main(String[] args) {
-        // System.nanoTime();
         Random rand = new Random(1000);
         int counter = 0;
 
