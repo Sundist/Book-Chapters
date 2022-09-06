@@ -3,9 +3,9 @@ import java.util.Random;
 public class Question20 {
     public static void main(String[] args) {
         int[] arr = new int[10];
-        Random random = new Random();
+        Random rand = new Random();
         for (int i = 0; i < 10; i++) {
-            arr[i] = random.nextInt(150);
+            arr[i] = rand.nextInt(150);
             System.out.print(arr[i] + " ");
         }
         System.out.println();
